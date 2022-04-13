@@ -22,6 +22,7 @@ private Integer id;
 	private LocalDateTime dataFechamento;
 	
 	private Integer prioridade;
+	
 	@NotEmpty(message = "O campo OBSERVAÇÕES é requerido")
 	private String observacoes;
 	private Integer status;
