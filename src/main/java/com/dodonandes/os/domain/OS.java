@@ -122,8 +122,12 @@ public class OS {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(id);
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		return result;
 	}
+
 
 	@Override
 	public boolean equals(Object obj) {
